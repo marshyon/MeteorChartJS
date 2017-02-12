@@ -47,16 +47,19 @@ meteor:PRIMARY> db.number_data.update({numKey: "colourNums1"},{$set: {Red: 34}})
 
 the 'key' of 'colourNums1' is used to 'set' the value of the column 'Red'.
 
-As the meteor app is using 'Deps.autorun(....)', the graph gets reloaded as a 
+As the meteor app is using 'Deps.autorun(....)' in ```client/main.js```, the graph gets reloaded as a 
 data change takes place:
 
 ```
 Template.hello.onRendered(function() {                                                                                                                                  
-      Deps.autorun(function() {                                                                                                                                           
-              graph.drawChart()                                                                                                                                                 
-                  });                                                                                                                                                                 
+      Deps.autorun(function() {
+              graph.drawChart()
+      });
 });                                                                                                                                                                     
 ```
+the imported function ```graph.drawChart()``` from graph.js does the work of
+inserting a ChartJS graph into the canvas defined in ```client/main.html```
+
 if you need to reset the database and have the sample data re-loaded, meteor
   reset will do this, cntrl-C the running meteor process and then :
 
