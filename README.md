@@ -39,4 +39,27 @@ meteor:PRIMARY> db.number_data.find()
 { "_id" : "QPjqhtnYZLGSiTziq", "numKey" : "colourNums2", "Red" : 1, "Blue" : 1, "Yellow" : 2, "Green" : 5, "Purple" : 9, "Orange" : 4 }
 ```
 
+edit a value, in this case the number for column 'red':
+
+```
+meteor:PRIMARY> db.number_data.update({numKey: "colourNums1"},{$set: {Red: 34}})
+```
+
+the 'key' of 'colourNums1' is used to 'set' the value of the column 'Red'.
+
+As the meteor app is using 'Deps.autorun(....)', the graph gets reloaded as a 
+data change takes place:
+
+```
+Template.hello.onRendered(function() {                                                                                                                                  
+      Deps.autorun(function() {                                                                                                                                           
+              graph.drawChart()                                                                                                                                                 
+                  });                                                                                                                                                                 
+});                                                                                                                                                                     
+```
+if you need to reset the database and have the sample data re-loaded, meteor
+  reset will do this, cntrl-C the running meteor process and then :
+
+        meteor reset
+
 
