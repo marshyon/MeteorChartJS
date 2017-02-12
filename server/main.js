@@ -14,6 +14,5 @@ Meteor.startup(() => {
 
 
 Meteor.publish('NumberData', function() {
-	console.log("fired");
   	return NumberData.find();
 });
