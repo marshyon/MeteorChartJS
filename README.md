@@ -36,7 +36,7 @@ Then open a browser with the URL ```http://localhost:3333```
 
 The graph should re-draw dynamically when changes are made in MongoDB
 
-#### Listing current data
+#### Listing Current Data
 
 open a shell to mongo in the directory of the app:
 
@@ -50,6 +50,8 @@ meteor:PRIMARY> db.number_data.find()
 { "_id" : "xkZw9RKrqLCrND7wx", "numKey" : "colourNums1", "Red" : 10, "Blue" : 12, "Yellow" : 20, "Green" : 5, "Purple" : 4, "Orange" : 4 }
 { "_id" : "QPjqhtnYZLGSiTziq", "numKey" : "colourNums2", "Red" : 1, "Blue" : 1, "Yellow" : 2, "Green" : 5, "Purple" : 9, "Orange" : 4 }
 ```
+
+#### Editing Graph Data
 
 edit a value, in this case the number for column 'red':
 
