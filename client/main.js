@@ -3,8 +3,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 import './main.css';
+
 var graph = require('./graph.js');
-import Chart from 'chart.js'
 
 Template.hello.onCreated(function() {
   this.autorun(() => {
