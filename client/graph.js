@@ -1,5 +1,7 @@
 var exports = module.exports = {};
 
+import Chart from 'chart.js'                                                                                                                                            
+
 exports.drawChart = function() {
     var vals = getVals();
     var ctx = document.getElementById("myChart");
