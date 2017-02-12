@@ -3,7 +3,7 @@
 using the word colour and Blaze templates
 
 This is a Meteor application using Blaze templates to render an instnace of a
-(ChartJS)[http://www.chartjs.org]
+[ChartJS](http://www.chartjs.org) graph.
 
 
 ### Download and run
