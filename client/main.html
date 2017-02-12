@@ -1,0 +1,27 @@
+<head>
+  <title>app2</title>
+</head>
+
+<body>
+
+  <div class="container">
+  {{> hello}}
+</div>
+</body>
+
+
+<template name="hello">
+
+<div class="jumbotron">
+    <h1>Meteor & ChartJS</h1> 
+    <p>using the word colour and Blaze templates</p> 
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6"><canvas id="myChart" class="myChart" width="600" height="400"></canvas></div>
+    <div class="col-md-3"></div>
+  </div>
+
+</template>
