@@ -2,7 +2,7 @@
 
 using the word colour and Blaze templates
 
-This is a Meteor application using Blaze templates to render an instnace of a
+This is a Meteor application using Blaze templates to render an instance of a
 [ChartJS](http://www.chartjs.org) graph.
 
 
