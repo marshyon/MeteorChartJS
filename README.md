@@ -24,13 +24,13 @@ change to its dirececory and install meteor if not already installed (for linux 
 
 for windows, see http://www.meteor.com/install and the 'windows' link
 
-setup & run the app:
+To setup & run the app:
 
         meteor npm install 
         
         meteor -p 3333
 
-open browser on http://localhost:3333
+Then open a browser with the URL ```http://localhost:3333```
 
 ### Modifying Data in MongoDB
 
@@ -69,12 +69,16 @@ Template.hello.onRendered(function() {
       });
 });                                                                                                                                                                     
 ```
-the imported function ```graph.drawChart()``` from graph.js does the work of
+The imported function ```graph.drawChart()``` from graph.js does the work of
 inserting a ChartJS graph into the canvas defined in ```client/main.html```
 
-if you need to reset the database and have the sample data re-loaded, meteor
+If you need to reset the database and have the sample data re-loaded, meteor
   reset will do this, cntrl-C the running meteor process and then :
 
         meteor reset
+
+and resstart as before with 
+
+        meteor -p 3333
 
 
