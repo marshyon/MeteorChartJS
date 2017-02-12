@@ -6,7 +6,7 @@ using the word colour and Blaze templates
 
 download or clone this repository
 
-change to its dirececory and install meteor if not already installed (for linux / mac):jjjjj
+change to its dirececory and install meteor if not already installed (for linux / mac):
 
         curl https://install.meteor.com/ | sh
 
