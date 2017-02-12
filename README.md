@@ -5,7 +5,7 @@ Using the word ```colour``` and ```Blaze``` templates.
 This is a Meteor application using Blaze templates to render an instance of a
 [ChartJS](http://www.chartjs.org) graph. The ```onRendered``` template function
 call is used to render the ChartJS components after blaze has done rendering
-its templates and Deps.Autorun is used to trigger the graph to be re-drawn 
+its templates and ```Deps.Autorun``` is used to trigger the graph to be re-drawn 
 dynamically as data changes in MongoDB.
 
 As this app uses Blaze and not React it may be considered old had but hey, it works
